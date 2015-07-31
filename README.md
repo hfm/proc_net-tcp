@@ -1,6 +1,7 @@
 # ProcNet::Tcp
 
 Parser for Linux `/proc/net/tcp`.
+And it's an attempt at Ruby port of [Linux-Proc-Net-TCP](http://search.cpan.org/~salva/Linux-Proc-Net-TCP/).
 
 ## Installation
 
