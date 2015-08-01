@@ -1,5 +1,7 @@
 # ProcNet::Tcp
 
+[![Build Status](https://travis-ci.org/tacahilo/proc_net-tcp.svg?branch=master)](https://travis-ci.org/tacahilo/proc_net-tcp)
+
 Parser for Linux `/proc/net/tcp`.
 And it's an attempt at Ruby port of [Linux-Proc-Net-TCP](http://search.cpan.org/~salva/Linux-Proc-Net-TCP/).
 
