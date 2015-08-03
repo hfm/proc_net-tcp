@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Parser for Linux /proc/net/tcp}
   spec.description   = %q{Parser for Linux /proc/net/tcp}
   spec.homepage      = "https://github.com/tacahilo/proc-net-tcp"
+  spec.license       = "http://hfm.mit-license.org/"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
