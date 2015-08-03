@@ -1,7 +1,7 @@
-require 'proc_net/base'
+require 'proc_net/tcp'
 
 module ProcNet
-  class Udp < ProcNet::Base
+  class Udp < ProcNet::Tcp
     # EXAMPLE:
     #     sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode ref pointer drops
     #      0: 00000000:0000 00000000:0000 07 00000000:00000000 00:00000000 00000000     0        0 123456789 2 yyyyyyyyyyyyyyyy 0

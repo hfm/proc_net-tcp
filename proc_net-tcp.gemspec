@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'proc_net/version'
+require 'proc_net/tcp/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "proc_net-tcp"
-  spec.version       = ProcNet::VERSION
+  spec.version       = ProcNet::Tcp::VERSION
   spec.authors       = ["Takahiro OKUMURA"]
   spec.email         = ["hfm.garden@gmail.com"]
 

@@ -1,7 +1,5 @@
-require "proc_net/base"
-
 module ProcNet
-  class Tcp < ProcNet::Base
+  class Tcp
     # EXAMPLE:
     #     sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode
     #      0: 0100007F:05E0 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 4154423584 1 ffff8103f1fee6c0 3000 0 0 2 -1
@@ -34,6 +32,19 @@ module ProcNet
           (.*)
         $
       /xi
+    end
+
+    def self.hex2ip(hex_ip)
+      format('%d.%d.%d.%d',
+             (hex_ip.hex >> 24) & 0xff,
+             (hex_ip.hex >> 16) & 0xff,
+             (hex_ip.hex >> 8)  & 0xff,
+             (hex_ip.hex)       & 0xff)
+    end
+
+    def self.hex2port(hex_port)
+      raise InvalidArgument, "#{hex_port}" unless hex_port.length == 4
+      hex_port.to_i(16).to_s
     end
   end
 end

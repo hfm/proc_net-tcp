@@ -6,6 +6,6 @@ class TestProcNetBase < Test::Unit::TestCase
   end
 
   def test_hex_to_port
-    assert_equal 22, ProcNet::Tcp.hex2port('0016')
+    assert_equal "22", ProcNet::Tcp.hex2port('0016')
   end
 end
