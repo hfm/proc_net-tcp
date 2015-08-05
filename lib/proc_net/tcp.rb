@@ -46,5 +46,8 @@ module ProcNet
       raise InvalidArgument, "#{hex_port}" unless hex_port.length == 4
       hex_port.to_i(16).to_s
     end
+
+    def read(file)
+    end
   end
 end
